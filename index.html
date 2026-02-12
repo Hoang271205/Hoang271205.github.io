@@ -10,6 +10,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <script>
         tailwind.config = {
@@ -22,45 +23,6 @@
             }
         }
     </script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #0f766e;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(90deg, #0f766e, #14b8a6);
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-    </style>
 </head>
 <body class="bg-gray-50 text-slate-800">
     <header class="fixed w-full bg-white shadow-sm z-50">
@@ -70,7 +32,6 @@
                     <span class="text-2xl font-bold text-teal-700">Hoang</span>
                     <span class="text-2xl font-light">Pham</span>
                 </div>
-                
                 <nav class="hidden md:block">
                     <ul class="flex space-x-8">
                         <li><a href="#about" class="nav-link font-medium text-gray-700 hover:text-teal-700">About</a></li>
@@ -80,7 +41,6 @@
                         <li><a href="#contact" class="nav-link font-medium text-gray-700 hover:text-teal-700">Contact</a></li>
                     </ul>
                 </nav>
-                
                 <button class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
@@ -111,24 +71,17 @@
                         Passionate about Full Stack Development with a strong focus on Backend. Experienced with Java, Next.js, and System Design.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <a href="#contact"
-                           class="bg-teal-700 border-2 border-teal-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:bg-teal-800 hover:shadow-md">
+                        <a href="#contact" class="bg-teal-700 border-2 border-teal-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:bg-teal-800 hover:shadow-md">
                             Contact Me <i class="fa-solid fa-paper-plane ml-2"></i>
                         </a>
-                        <a href="https://github.com/Hoang271205" target="_blank"
-                           class="border-2 border-teal-700 text-teal-700 font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:bg-teal-50 hover:shadow-md">
+                        <a href="https://github.com/Hoang271205" target="_blank" class="border-2 border-teal-700 text-teal-700 font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:bg-teal-50 hover:shadow-md">
                             <i class="fa-brands fa-github mr-2"></i> GitHub
                         </a>
                     </div>
                 </div>
-
                 <div class="lg:w-1/2 flex justify-center lg:justify-end lg:pl-16 mt-12 lg:mt-0">
                     <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full bg-teal-100 overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl border-4 border-white">
-                        <img src="hoangavatar1.jpg" 
-                             alt="Hoang Pham Avatar"
-                             class="absolute inset-0 w-full h-full object-cover"
-                             loading="lazy"
-                             onerror="this.src='https://ui-avatars.com/api/?name=Huy+Hoang&background=0f766e&color=fff&size=512'">
+                        <img src="hoangavatar1.jpg" alt="Hoang Pham Avatar" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.src='https://ui-avatars.com/api/?name=Huy+Hoang&background=0f766e&color=fff&size=512'">
                     </div>
                 </div>
             </div>
@@ -140,30 +93,26 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-4 text-teal-800">ABOUT ME</h2>
                 <div class="w-20 h-1 bg-teal-600 mx-auto mb-12"></div>
-                
                 <div class="bg-teal-50/50 p-8 rounded-2xl border border-teal-100 shadow-sm mb-12">
-    <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-        <i class="fa-solid fa-user-tag text-teal-600 mr-2"></i>Summary
-    </h3>
-    
-    <p class="text-gray-600 leading-relaxed text-lg">
-        I am <strong>Pham Huy Hoang</strong>, a passionate Full Stack Developer with a strong focus on Backend Development. I have over 3 years of experience working with <strong>Java, HTML, JavaScript, CSS, MongoDB, and Object-Oriented Programming (OOP)</strong>.
-    </p>
-
-    <div class="mt-6">
-        <p class="text-gray-800 font-semibold mb-2 text-lg">Experienced in:</p>
-        <ul class="list-disc list-inside text-gray-600 leading-relaxed text-lg space-y-1 ml-2">
-            <li>Designing and developing <strong>RESTful APIs</strong></li>
-            <li>Database design & management</li>
-            <li><strong>Git</strong> version control & <strong>Git Flow</strong> methodology</li>
-            <li>Backend architecture & authentication systems</li>
-        </ul>
-    </div>
-
-    <p class="text-gray-600 leading-relaxed text-lg mt-6">
-        Strong interest in <strong>System Design, AI/ML, Security Research</strong>, and High-Performance Backend Systems.
-    </p>
-</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+                        <i class="fa-solid fa-user-tag text-teal-600 mr-2"></i>Summary
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        I am <strong>Pham Huy Hoang</strong>, a passionate Full Stack Developer with a strong focus on Backend Development. I have over 3 years of experience working with <strong>Java, HTML, JavaScript, CSS, MongoDB, and Object-Oriented Programming (OOP)</strong>.
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-gray-800 font-semibold mb-2 text-lg">Experienced in:</p>
+                        <ul class="list-disc list-inside text-gray-600 leading-relaxed text-lg space-y-1 ml-2">
+                            <li>Designing and developing <strong>RESTful APIs</strong></li>
+                            <li>Database design & management</li>
+                            <li><strong>Git</strong> version control & <strong>Git Flow</strong> methodology</li>
+                            <li>Backend architecture & authentication systems</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-lg mt-6">
+                        Strong interest in <strong>System Design, AI/ML, Security Research</strong>, and High-Performance Backend Systems.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -172,9 +121,7 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4 text-teal-800">TECHNICAL SKILLS</h2>
             <div class="w-20 h-1 bg-teal-600 mx-auto mb-12"></div>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover border-t-4 border-teal-600">
                     <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-100 flex items-center">
                         <i class="fa-solid fa-code text-teal-600 mr-2"></i> Languages
@@ -187,7 +134,6 @@
                         <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>HTML5 / CSS3</li>
                     </ul>
                 </div>
-                
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover border-t-4 border-blue-600">
                     <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-100 flex items-center">
                         <i class="fa-solid fa-layer-group text-blue-600 mr-2"></i> Frameworks
@@ -200,7 +146,6 @@
                         <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Tailwind CSS 4</li>
                     </ul>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover border-t-4 border-green-600">
                     <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-100 flex items-center">
                         <i class="fa-solid fa-database text-green-600 mr-2"></i> Data & Tools
@@ -212,7 +157,6 @@
                         <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Git / GitHub</li>
                     </ul>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 card-hover border-t-4 border-purple-600">
                     <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-100 flex items-center">
                         <i class="fa-solid fa-brain text-purple-600 mr-2"></i> Concepts
@@ -232,9 +176,7 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4 text-teal-800">PROJECT EXPERIENCE</h2>
             <div class="w-20 h-1 bg-teal-600 mx-auto mb-12"></div>
-            
             <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 hover:border-teal-200 transition duration-300 card-hover">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-gray-800">Film Ticket Booking</h3>
@@ -253,7 +195,6 @@
                         <span class="bg-white border px-2 py-1 rounded text-gray-500">React</span>
                     </div>
                 </div>
-
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 hover:border-teal-200 transition duration-300 card-hover">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-gray-800">Food Blog</h3>
@@ -272,7 +213,6 @@
                         <span class="bg-white border px-2 py-1 rounded text-gray-500">Tailwind</span>
                     </div>
                 </div>
-
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 hover:border-teal-200 transition duration-300 card-hover">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-gray-800">Mini-GPT</h3>
@@ -290,7 +230,6 @@
                         <span class="bg-white border px-2 py-1 rounded text-gray-500">Python</span>
                     </div>
                 </div>
-
                 <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 hover:border-teal-200 transition duration-300 card-hover">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-2xl font-bold text-gray-800">Entropy-X</h3>
@@ -308,7 +247,6 @@
                         <span class="bg-white border px-2 py-1 rounded text-gray-500">Security</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -317,7 +255,6 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4 text-teal-800">EDUCATION</h2>
             <div class="w-20 h-1 bg-teal-600 mx-auto mb-12"></div>
-            
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white p-8 rounded-xl shadow-sm border-l-8 border-teal-600 card-hover">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
@@ -353,7 +290,6 @@
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-4 text-teal-800">Get In Touch</h2>
                 <p class="text-xl text-gray-500 mb-12">Have a question or want to work together?</p>
-                
                 <div class="grid md:grid-cols-3 gap-8">
                     <a href="mailto:hoang.pham230217@vnuk.edu.vn" class="bg-gray-50 p-6 rounded-xl hover:bg-teal-50 transition duration-300 border border-gray-100 group">
                         <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-600 group-hover:text-white transition">
@@ -362,7 +298,6 @@
                         <h3 class="font-semibold text-gray-800 mb-2">Email</h3>
                         <p class="text-gray-500 text-sm break-all">hoang.pham230217@vnuk.edu.vn</p>
                     </a>
-
                     <a href="tel:081824009" class="bg-gray-50 p-6 rounded-xl hover:bg-teal-50 transition duration-300 border border-gray-100 group">
                         <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-600 group-hover:text-white transition">
                             <i class="fas fa-phone text-xl"></i>
@@ -370,7 +305,6 @@
                         <h3 class="font-semibold text-gray-800 mb-2">Phone</h3>
                         <p class="text-gray-500 text-sm">081824009</p>
                     </a>
-
                     <a href="https://github.com/Hoang271205" target="_blank" class="bg-gray-50 p-6 rounded-xl hover:bg-teal-50 transition duration-300 border border-gray-100 group">
                         <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-600 group-hover:text-white transition">
                             <i class="fab fa-github text-xl"></i>
@@ -389,64 +323,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu
-            const mobileMenuBtn = document.querySelector('button.md\\:hidden');
-            const mobileMenu = document.querySelector('.mobile-menu');
-            const mobileMenuClose = document.querySelector('.mobile-menu-close');
-            
-            function toggleMenu() {
-                mobileMenu.classList.toggle('hidden');
-                document.body.style.overflow = mobileMenu.classList.contains('hidden') ? '' : 'hidden';
-            }
-            
-            mobileMenuBtn.addEventListener('click', toggleMenu);
-            mobileMenuClose.addEventListener('click', toggleMenu);
-            
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', toggleMenu);
-            });
-            
-            // Smooth Scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const headerHeight = document.querySelector('header').offsetHeight;
-                        window.scrollTo({
-                            top: targetElement.offsetTop - headerHeight,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Scroll Animation (Card fade-in)
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100', 'translate-y-0');
-                        entry.target.classList.remove('opacity-0', 'translate-y-10');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.card-hover').forEach(el => {
-                el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
-                observer.observe(el);
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
